@@ -25,6 +25,7 @@ namespace Project_Group
                 Console.WriteLine("Digite o numero correspondente ao Genero:");
                 Console.WriteLine("");
                 Console.WriteLine(" 1 - Comédia\n 2 - Romance\n 3 - Ação\n 4 - Terror\n 5 - Créditos\n\n\n 9 - Sair");
+                Console.WriteLine("");
                 int opcao = int.Parse(Console.ReadLine());
                 Menu menu = (Menu)opcao;
                 switch (menu)
@@ -66,9 +67,10 @@ namespace Project_Group
             {
                 Console.WriteLine("");
                 come.Exibicao();
-                Console.WriteLine("(Pressione Enter para voltar)");
+
             }
-            
+            Console.WriteLine("");
+            Console.WriteLine("(Pressione Enter para voltar)");
 
             Console.ReadLine();
 
@@ -85,9 +87,10 @@ namespace Project_Group
             {
                 Console.WriteLine("");
                 rome.Exibicao();
-                Console.WriteLine("(Pressione Enter para voltar)");
-            }
 
+            }
+            Console.WriteLine("");
+            Console.WriteLine("(Pressione Enter para voltar)");
 
             Console.ReadLine();
 
@@ -104,9 +107,10 @@ namespace Project_Group
             {
                 Console.WriteLine("");
                 aca.Exibicao();
-                Console.WriteLine("(Pressione Enter para voltar)");
-            }
 
+            }
+            Console.WriteLine("");
+            Console.WriteLine("(Pressione Enter para voltar)");
 
             Console.ReadLine();
 
@@ -115,7 +119,7 @@ namespace Project_Group
         {
             List<IFilmes> terror = new List<IFilmes>();
             terror.Add(new Terror("Chucky", 1998, "+18", "1h 29min"));
-            terror.Add(new Terror("Nem Tudo São Flores", 2022, "+18", "3meses"));
+            terror.Add(new Terror("Nem Tudo São Flores", 2022, "+18", "3 meses"));
 
             Console.Clear();
             Console.WriteLine("Lista de Terror");
@@ -123,9 +127,10 @@ namespace Project_Group
             {
                 Console.WriteLine("");
                 terr.Exibicao();
-                Console.WriteLine("(Pressione Enter para voltar)");
-            }
 
+            }
+            Console.WriteLine("");
+            Console.WriteLine("(Pressione Enter para voltar)");
 
             Console.ReadLine();
 
@@ -144,7 +149,38 @@ namespace Project_Group
                 if (opcao2 == "Sim")
                 {
                     Console.WriteLine("Programa feito pela turma .NET 2 Generation");
+                    Console.WriteLine("");
                     Console.WriteLine("Beatriz Gomes Trindade\nFabio Iki\nIsrael Felipe\nLucas Fernandes\nMatheus Carnizella\nRaul Andres\nSamira Ixoobecan");
+                    Console.ReadLine();
+                    Console.Clear();
+                    break;
+                }
+                if (opcao2 == "sim")
+                {
+                    Console.WriteLine("Programa feito pela turma .NET 2 Generation");
+                    Console.WriteLine("");
+                    Console.WriteLine("Beatriz Gomes Trindade\nFabio Iki\nIsrael Felipe\nLucas Fernandes\nMatheus Carnizella\nRaul Andres\nSamira Ixoobecan");
+                    Console.ReadLine();
+                    Console.Clear();
+                    break;
+                }
+                else if (opcao2 == "Nao")
+                {
+                    Console.WriteLine("Ingrato :(");
+                    Console.ReadLine();
+                    Console.Clear();
+                    break;
+                }
+                else if (opcao2 == "nao")
+                {
+                    Console.WriteLine("Ingrato :(");
+                    Console.ReadLine();
+                    Console.Clear();
+                    break;
+                }
+                else if (opcao2 == "não")
+                {
+                    Console.WriteLine("Ingrato :(");
                     Console.ReadLine();
                     Console.Clear();
                     break;
